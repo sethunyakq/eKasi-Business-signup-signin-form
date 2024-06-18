@@ -52,7 +52,7 @@ signUp.addEventListener('click', (event) => {
             return setDoc(docRef, userData);
         })
         .then(() => {
-            window.location.href = 'https://register.framer.ai/';
+            window.location.href = 'https://ekasi.framer.media/Hubspot';
         })
         .catch((error) => {
             console.error("Error writing document", error);
@@ -72,7 +72,7 @@ signIn.addEventListener('click', (event) => {
             showMessage('Login is successful', 'signInMessage');
             const user = userCredential.user;
             localStorage.setItem('loggedInUserId', user.uid);
-            window.location.href = 'https://register.framer.ai/';
+            window.location.href = 'https://ekasi.framer.media/Hubspot';
         })
         .catch((error) => {
             const errorCode = error.code;
